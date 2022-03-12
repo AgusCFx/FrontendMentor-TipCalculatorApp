@@ -1,2 +1,63 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family: 'Space Mono', monospace;}
+
+:root{
+    --strong-cyan: hsl(172, 67%, 45%);
+    --very-dark-cyan: hsl(183, 100%, 15%);
+    --dark-grayish-cyan: hsl(186, 14%, 43%);
+    --grayish-cyan: hsl(184, 14%, 56%);
+    --light-grayish-cyan: hsl(185, 41%, 84%);
+    --very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+}
+html{
+    /* debug */
+    background-color:  black;
+}
+body{
+    margin: 0 auto;
+    max-width: 375px;
+    height: 667px;;;
+    background-color: var(--light-grayish-cyan); 
+}
+header{
+    height: 130px;
+}
+.inputName{
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: var(--dark-grayish-cyan);
+}
+.appContainer{
+    background-color: var(--white);
+    border-radius: 25px 25px 0 0;
+}
+.section{
+    max-height: 300px;
+    display:flex;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+    padding: 8%;
+}
+.settingSection__box{
+    margin-bottom: 25px;
+}
+
+
+.gettingSection{
+    background-color: var(--very-dark-cyan);
+}
+
+
+
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+/* CSS Utilities (mini-library) */
+/* full center Flexbox */
+.fullCenter{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}

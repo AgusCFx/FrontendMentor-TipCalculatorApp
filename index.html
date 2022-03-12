@@ -4,25 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style/style.css">
   <title>Frontend Mentor | Tip calculator app</title>
 </head>
 <body>
   <div class="bodyContainer">
-    <header>
+    <header class="fullCenter">
       <img src="images/logo.svg" alt="Logo Splitter">
     </header>
     <main>
       <div class="appContainer">
         <div class="settingSection section">
-          <div class="bill">
+          <div class="bill settingSection__box">
             <p class="inputName inputName__setting">Bill</p>
             <div class="inputBox">
               <img src="images/icon-dollar.svg">
-              <input type="number">
+              <input type="number" placeholder="0">
             </div>
           </div>
-          <div class="selectTip">
+          <div class="selectTip settingSection__box">
             <p class="inputName inputName__setting">Select Tip %</p>
             <div class="tipBoxContainer">
               <div class="tipBox__box">5%</div>
@@ -33,11 +36,11 @@
               <div class="tipBox__box tipBox__box-custom"></div>
             </div>
           </div>
-          <div class="numberOfPeople">
+          <div class="numberOfPeople settingSection__box">
             <p class="inputName inputName__setting">Number of People</p>
             <div class="inputBox">
               <img src="images/icon-person.svg">
-              <input type="number">
+              <input type="number" placeholder="0">
             </div>
           </div>
         </div>
