@@ -16,12 +16,31 @@ html{
 body{
     margin: 0 auto;
     max-width: 375px;
-    height: 667px;;;
+    height: 667px;
     background-color: var(--light-grayish-cyan); 
 }
 header{
     height: 130px;
 }
+input{
+    border:0;
+    text-align: right;
+    background-color: inherit;
+    padding: 5px;
+    width: 90%;
+}
+.icon{
+    margin-left: 5px;
+}
+.inputBox{
+    width: 100%;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light-grayish-cyan);
+}
+
 .inputName{
     font-size: 0.9rem;
     margin-bottom: 5px;
