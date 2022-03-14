@@ -10,8 +10,7 @@
     --white: hsl(0, 0%, 100%);
 }
 html{
-    /* debug */
-    background-color:  black;
+    background-color: black;
 }
 body{
     margin: 0 auto;
@@ -50,19 +49,14 @@ input:focus{
     display:flex;
     justify-content: space-between;
     flex-flow: column nowrap;
-    padding: 8%;
 }
 .settingSection__box{
-    margin-bottom: 25px;
-}
-.gettingSection{
-    background-color: var(--very-dark-cyan);
-    margin:20px;
-    border-radius: 15px;;
+    padding-top: 25px;
+    margin: 0% 8%;
 }
 
 .icon{
-    margin-left: 15px;
+    margin-left: 20px;
 }
 .inputBox{
     width: 100%;
@@ -87,6 +81,10 @@ input:focus{
     justify-content: space-between;
     flex-flow: row wrap;
     align-content: space-between;
+}
+.settingSection__box:last-child{
+    margin-bottom: 0;
+    padding-bottom: 0;
 
 }
 .tipBox__box{
@@ -111,6 +109,12 @@ input:focus{
     background-color: transparent;
 }
 
+.gettingSection__container{
+    margin: 20px;
+    padding: 25px;
+    background-color: var(--very-dark-cyan);
+    border-radius: 15px;
+}
 .gettingSection__box{
     display:flex;
     justify-content: space-between;
@@ -131,7 +135,16 @@ input:focus{
     font-size: 1.8rem;
     color: var(--strong-cyan);
 }
-
+.reset__button{
+    background-color: var(--strong-cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    color: var(--very-dark-cyan);
+}
 
 
 .attribution { font-size: 11px; text-align: center; }
