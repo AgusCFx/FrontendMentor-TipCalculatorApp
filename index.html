@@ -33,14 +33,14 @@
               <div class="tipBox__box">15%</div>
               <div class="tipBox__box">25%</div>
               <div class="tipBox__box">50%</div>
-              <div class="tipBox__box tipBox__box-custom"><input type="text" placeholder="Custom"></div>
+              <div class="tipBox__box tipBox__box-custom"><input id="tipCustom" type="text" placeholder="Custom"></div>
             </div>
           </div>
           <div class="numberOfPeople settingSection__box">
             <p class="inputName inputName__setting">Number of People</p>
             <div class="inputBox">
               <img class="icon" src="images/icon-person.svg">
-              <input type="text" placeholder="0">
+              <input type="text" placeholder="0" id="numberOfPeople">
             </div>
           </div>
         </div>
@@ -51,17 +51,17 @@
                 <p class="inputName inputName__getting">Tip Amount</p>
                 <p class="textPriceDivisor">/ person</p>
               </div>
-              <p class="tipAmount__resolve resolve">$0.00</p>
+              <p class="tipAmount__resolve resolve" id="tipAmount">$0.00</p>
             </div>
             <div class="total gettingSection__box">
               <div class="gettingSection__box__textItems">
                 <p class="inputName inputName__getting">Total</p>
                 <p class="textPriceDivisor">/ person</p>
               </div>
-              <p class="total__resolve resolve">$0.00</p>
+              <p class="total__resolve resolve" id="total">$0.00</p>
             </div>
             <div class="reset">
-              <div class="reset__button">
+              <div class="reset__button reset__button-active">
                 <p class="reset__button__text">RESET</p>
               </div>
             </div>
