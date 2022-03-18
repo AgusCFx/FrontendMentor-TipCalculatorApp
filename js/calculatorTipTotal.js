@@ -29,14 +29,18 @@ numberOfPeople.addEventListener('input', (e) =>{
 });
 
 //------------- seccion tip
+let tipCheck;
 
 tip.forEach(element => {
     if(!element.classList.contains('tipBox__box-custom')){
         element.addEventListener('click', (e)=>{
             tipInit = parseInt(e.target.innerText.slice(0, -1));
             tipCustom.value = "";
-            element.className.add('tipBox__box-checked');
-            // add class tipBox__box-checked
+            if(tipCheck){
+                tipCheck.classList.remove('tipBox__box-checked');
+            }
+            tipCheck=element;
+            tipCheck.classList.add('tipBox__box-checked');
             lastFunction(billInit,tipInit,numberOfPeopleInit);
         })
 
@@ -44,6 +48,7 @@ tip.forEach(element => {
         tipCustom.addEventListener('input',(e)=>{
             justNumber(e.target);
             tipInit = parseInt(e.target.value);
+            tipCheck.classList.remove('tipBox__box-checked');
             lastFunction(billInit,tipInit,numberOfPeopleInit);
         })
     }
