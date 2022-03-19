@@ -14,7 +14,6 @@ let total = document.getElementById('total');
 
 bill.addEventListener('input', (e) =>{
     justNumber(e.target);
-    inputsHandler(e.target);
     billInit = parseInt(e.target.value);
     lastFunction(billInit,tipInit,numberOfPeopleInit);
 });
@@ -23,8 +22,11 @@ bill.addEventListener('input', (e) =>{
 //------------- seccion NumberOfPeople
 numberOfPeople.addEventListener('input', (e) =>{
     justNumber(e.target);
-    inputsHandler(e.target);
     numberOfPeopleInit = parseInt(e.target.value);
+    if(!numberOfPeopleInit){
+        document.getElementById('numberOfPeopleError').classList.add('numberOfPeople__error-active');
+    }else{document.getElementById('numberOfPeopleError').classList.remove('numberOfPeople__error-active');
+    }
     lastFunction(billInit,tipInit,numberOfPeopleInit);
 });
 
@@ -60,12 +62,6 @@ function justNumber(target){
         target.value = target.value.slice(0, -1)
     }
 }
-function inputsHandler(inp){
-    if(!inp.value || inp.value.parseInt <= 0){
-        inp.classList.add("error")
-        // agregar clase error
-    }
-}
 function tipAmountCalc(b,t,nOP){
     return ((b*t)/100)/nOP;
 };
@@ -79,9 +75,6 @@ function lastFunction(b,t,nOP){
     console.log(totalTip, totalPrice);
     tipAmount.textContent="$"+totalTip.toFixed(2);
     total.textContent="$"+totalPrice.toFixed(2);
-
-
-    
 }
 
 

@@ -78,12 +78,16 @@ input:focus{
 .inputName__setting{
     margin-bottom: 5px;
 }
-.numberOfPeople-error{
+.numberOfPeople__error{
     position: absolute;
-    color:orangered;
     font-size: 0.95rem;
     top: -30px;
     right: 0px;
+    color: transparent;
+}
+.numberOfPeople__error-active{
+    display: inline;
+    color:orangered;
 }
 .tipBoxContainer{
     height: 150px;
