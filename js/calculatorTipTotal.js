@@ -1,10 +1,11 @@
 let billInit = 0;
-let bill = document.getElementById('bill');
+const bill = document.getElementById('bill');
 let tipInit = 0;
-let tip = document.querySelectorAll('.tipBox__box');
-let tipCustom = document.getElementById('tipCustom');
+const tip = document.querySelectorAll('.tipBox__box');
+const tipCustom = document.getElementById('tipCustom');
 let numberOfPeopleInit = 1;
-let numberOfPeople = document.getElementById('numberOfPeople');
+const numberOfPeople = document.getElementById('numberOfPeople');
+const resetBtn = document.getElementById('resetBtn');
 
 let tipAmount = document.getElementById('tipAmount');
 let total = document.getElementById('total');
@@ -55,6 +56,18 @@ tip.forEach(element => {
         })
     }
 });
+
+//------------- reset
+resetBtn.addEventListener('click',(e)=>{
+    bill.value = "";
+    billInit = 0;
+    tipCheck.classList.remove('tipBox__box-checked');
+    tipInit = 0;
+    tipCustom.value = "";
+    numberOfPeople.value = "";
+    numberOfPeopleInit = 1;
+})
+
 //------------- seccion funciones
 
 function justNumber(target){
@@ -81,4 +94,3 @@ function lastFunction(b,t,nOP){
 // REVISAR
 // resultados sin NaN al quedar en 0, que se imprima $0.00 en el resultado
 // resultados sin infinity
-// reiniciar contador al reiniciar la pagina

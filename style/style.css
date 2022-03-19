@@ -15,7 +15,6 @@ html{
 body{
     margin: 0 auto;
     width: 375px;
-    height: 667px;
     background-color: var(--light-grayish-cyan); 
 }
 header{
@@ -176,6 +175,16 @@ input:focus{
     background-color: var(--dark-grayish-cyan);
 }
 
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+footer{
+    width: 100%;
+    background-color: var(--white);
+}
+.attribution {
+    width: 100%;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    display: inline;
+    color: hsl(228, 45%, 44%);
+}
