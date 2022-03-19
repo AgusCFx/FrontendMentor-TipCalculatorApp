@@ -60,6 +60,7 @@ input:focus{
     margin-left: 20px;
 }
 .inputBox{
+    position: relative;
     width: 100%;
     display:flex;
     flex-flow: row nowrap;
@@ -67,6 +68,7 @@ input:focus{
     align-items: center;
     background-color: var(--very-light-grayish-cyan);
 }
+.tipBox__box-custom:hover,
 .inputBox:hover{
     outline:2px var(--strong-cyan) solid;
 }
@@ -75,6 +77,13 @@ input:focus{
 }
 .inputName__setting{
     margin-bottom: 5px;
+}
+.numberOfPeople-error{
+    position: absolute;
+    color:orangered;
+    font-size: 0.95rem;
+    top: -30px;
+    right: 0px;
 }
 .tipBoxContainer{
     height: 150px;
@@ -100,7 +109,8 @@ input:focus{
     font-size: 1.4rem;
     user-select: none;
 }
-.tipBox__box:hover{
+
+.tipBox__box:hover:not(.tipBox__box-custom){
     background-color: var(--light-grayish-cyan);
     color: var(--very-dark-cyan);
 }
@@ -113,6 +123,7 @@ input:focus{
 }
 .tipBox__box-custom input{
     background-color: transparent;
+    caret-color: var(--strong-cyan);
 }
 
 .gettingSection__container{

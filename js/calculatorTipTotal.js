@@ -77,7 +77,6 @@ function lastFunction(b,t,nOP){
     let totalTip = tipAmountCalc(b,t,nOP);
     let totalPrice = totalCalc(b,t,nOP);
     console.log(totalTip, totalPrice);
-
     tipAmount.textContent="$"+totalTip.toFixed(2);
     total.textContent="$"+totalPrice.toFixed(2);
 
