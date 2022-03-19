@@ -94,8 +94,3 @@ function lastFunction(b,t,nOP){
         total.textContent="$"+totalPrice.toFixed(2);
     }
 }
-
-
-// REVISAR
-// resultados sin NaN al quedar en 0, que se imprima $0.00 en el resultado
-// resultados sin infinity
